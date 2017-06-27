@@ -13,9 +13,9 @@ INSERT INTO todos (id, title, details, priority, created_at) VALUES (3, 'Date Ni
 INSERT INTO todos (id, title, details, priority, created_at) VALUES (4, 'Organize the garage', 'Start organizing the back wall.', 3, '06/26/17 10:15');
 INSERT INTO todos (id, title, details, priority, created_at, completed_at) VALUES (5, 'Play with the cat', 'Play fetch for 15 minutes.', 1, '06/26/17 11:00', '06/28/2017 12:00' );
 
-SELECT title WHERE completed_at IS NOT NULL;
+SELECT todos WHERE completed_at IS NOT NULL;
 
-SELECT title WHERE priority > 1;
+SELECT todos WHERE priority > 1;
 
 UPDATE todos SET completed_at = 06/28/17 11:00 WHERE id = 4;
 
